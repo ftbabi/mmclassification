@@ -7,7 +7,7 @@ model = dict(
         type='LinearClsHead',
         # TODO: cls num
         num_classes=10,
-        in_channels=576,
+        in_channels=96,
         loss=dict(type='CrossEntropyLoss', loss_weight=1.0),
         topk=(1, 5),
     ))
